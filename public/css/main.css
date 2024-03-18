@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Gloria+Hallelujah&family=Sniglet&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    overflow: auto;
+    background-color:black;
+    color: white;
+    //color:black;
+}
+
+nav{
+    display: flex;
+    background-color:black;
+    font-family: 'Nunito', sans-serif;
+    justify-content: flex-end;
+    color: white;
+    
+    
+}
+.logo{
+    height: 60px;
+    font-family: 'Sniglet', cursive;
+    color: white;
+    font-size: 40px;
+    padding: 0.5% 0% 0% 5%;
+    margin-right: auto;
+}
+   nav a{
+    font-size: 20px;
+    
+    text-transform: uppercase;
+    color: red;
+    text-decoration: none;
+    line-height: 30px;
+    position: relative;
+   float: right;
+    // background-color: blueviolet;
+   float: right;
+   padding: 3% 0% 3% 0%;
+     
+   
+   }
+   
+   a:after{
+    content:"";
+    position: absolute;
+    background-color:white;
+    height:3px;
+    width:0;
+    left: 0;
+    bottom:-6px;
+    transition: 0.3s;
+   }
+  a:hover:after{
+    width: 100%;
+    color: #ffffff;
+   
+   }
+   .nav__links{
+    list-style: none;
+    text-align: center;
+    
+    
+   
+   }
+   
+   .nav__links li {
+       color: white;
+        display: inline-block;
+    margin-right: 30px;
+   }
+   
+   .nav__links li a{
+    //transition: all 0.3s ease 0s;
+    //color: black;
+    color:white;
+
+   
+   }
+
+   ul {
+    list-style: none; 
+    padding:0;
+     margin:0;
+   }
+   
+  
+   
+   li ul {
+    display: none;
+   }
+   
+   ul li a {
+    
+    min-width:80px;
+    display: block;
+    font-size:20px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+
+
+   }
+   
+   li:hover li {
+    float: none; 
+    
+    
+   }
+   li:hover ul{
+    display: grid;
+    position: absolute;
+    background-color:#000000;
+    margin-top: 3%;
+    margin-left: -8px;
+    height: 20%;
+    width:3.5%;
+    justify-content: center ;
+    padding: 0% 10px 0% 2%;
+    z-index: 9999;
+    
+ 
+  }
+   li:hover ul a {
+    color: white;
+   }
+   
+
+   
+
+   
+   
+  
+   footer{
+    position: fixed;
+     width: 100%;
+    left: 0;
+     bottom: 0;
+   }
+   .footer{
+      
+    display: flex;
+    font-size: 14px;
+    align-items:center;
+    background-color:black;
+    color: white;
+    flex-direction: column;
+    line-height: 10px;
+    
+   }
+   /* home */
+   
+  .banner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .f-text h1 {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    color: white;
+  }
+  
+  .f-text span {
+    color: #db5dab;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    border: solid 1px white;
+    padding: 20px 40px;
+    transition: 0.4s;
+  }
+  .btn a{
+    
+    text-decoration: none;
+    color: white;
+    
+  }
+  .btn:hover {
+    background:black ;
+    color: white;
+    
+  } 
+ 
+  .main {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+  }
+  .main-left {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 65%;
+  }
+  .main-right {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    height: 80%;
+    width: 45%;
+    background: black;
+  }
+  
+  .main-right img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    animation: animation 5s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+
+  @keyframes animation {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+   /* Form */
+
+   .form_container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    height: fit-content;
+    background-color: #000000;
+    color: white;
+     padding: 0% 0% 8% 0%;
+    margin-right: 2%;
+    overflow-y: hidden;
+
+   }
+  
+   .form_right{
+      margin-top: 5%;
+      width: 150%;
+      font-size: 24px;
+      //background-color: red;
+      padding: 10% 0px 0px 2%;
+      float: right;
+
+   }
+   .form_left{
+    margin-top: 6%;
+    width: 50%;
+    //background-color: aqua;
+    padding: 6% 10% 8% 20%;
+
+
+ }
+ .form_left h1{
+    font-size: 38px;
+    
+
+
+}
+.form_left input{
+    font-size:18px;
+    display: block;
+   padding: 5px;
+   color: white;
+   border-radius:3px 3px 3px 3px;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   outline: none;
+
+}
+.form_left button{
+    font-size:18px;
+    display: block;
+   padding: 5px;
+   outline: none;
+   width: 70%;
+   outline: none;
+   background-color:#ffffff;
+   color:black;
+   
+}
+.form_left a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 14px;
+    overflow-y: hidden;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    
+}
+.medley_info{
+    background-color: white;
+    display: inline-block;
+    width: 30%;
+    height: 50%;
+    margin: 5% 0% 0% 2%;
+    padding:0px 0px 0px 10px;
+    font-size: 18px;
+    color: black;
+    border-radius: 16px 16px 16px 16px;
+
+}
+.medley_info h2{
+    text-align: center;
+}
+.medley_info p{
+    text-align: center;
+    font-size:18px ;
+}
+
+.medley_info img{
+    height:100px;
+    padding: 4% 0% 0% 40%;
+}
+.medley_description{
+    display: flex;
+    //background-color: aqua;
+    font-size: 24px;
+   text-align: center;
+   margin:8% 10% 0% 10%;
+}   
+
+
+
+//shop
+.shop_container{
+    background-color: #db5dab;
+    
+    margin-top: 5%;
+}
+.shop_shirt,.shop_pant,.shop_shoes{
+    border: 2px solid white;
+    
+    border-color: #ffffff;
+   
+    display: block;
+    height: 16vh;
+    width: 40%;
+    
+    
+  
+    padding-top: 2%;
+    padding-left: 10%;
+    margin: 3.5% 0px 0px 25% ; 
+    
+   
+}
+
+.shop_shirt  a,.shop_pant a,.shop_shoes a {
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+   
+}
+.shop_shirt  h1,.shop_pant h1,.shop_shoes h1 {
+  padding: 0  0 0% 60%;
+   margin-top: -11%;
+}
+
+//shirts
+.product_container{
+    background-color:red;
+    display: inline-block;
+    height: 40vh;
+    width: 21%;
+    margin-left: 2%;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+    
+.product_container::-webkit-scrollbar {
+        display: none;
+ }   
+
+
+.product_display{
+   // background-color:aqua ;
+    display: inline-block;
+    height: 70vh;
+    width: 90%;
+    margin: 0% 2% 0% 4%;
+    overflow-y: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+  
+} 
+.product_display a{
+    text-decoration: none;
+  color: white;
+  font-size: 18px;
+   
+ } 
+.product_display::-webkit-scrollbar {
+    display: none;
+}   
+
+.shirt_display{
+    display: inline-block;
+    height: 40vh;
+    width: 21%;
+    margin-left: 2%;
+    padding: 8px 30px 0px 10px;
+  
+} 
+.tshirt_display{
+    display: inline-block;
+    
+    width: 21%;
+    margin-left: 2%;
+    padding: 8px 30px 0px 10px;
+  
+}
+
+.details_container{
+    display: flex;
+    //background-color: red;
+    height:800px;
+    width: 80%;
+    margin: 3% 0% 2% 10%;
+    border-radius: 16px 16px 16px 16px;
+    background-color: white;
+    color: #000000;
+}
+.details_container ul{
+    font-size: 18px;
+}
+.details_container li{
+    
+    padding: 5px;
+}
+.details_left{
+    display: flex;
+    width: 40%;
+    
+    
+    color: #000000;
+  
+    padding:2% 0% 2% 3%;
+}
+
+.details_left img{
+    
+    margin-left: 20%;
+    padding:2% 0% 2% 3%;
+}
+.details_right{
+    display: flex;
+    flex-direction: column;
+     width: 30%;
+     float: right;
+     //background-color: rebeccapurple;
+     color: black;
+     border-radius: 16px 16px 16px 16px;
+     justify-content:center ;  
+     text-align:left;
+     padding:2% 0% 6% 3%;
+     margin: 2% 0% 2% 6%;
+   
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ }
+ 
+.details_quantity button{
+    height: 20px;
+    width: 25px;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px 4px 4px 4px;
+}
+.details_button button{
+    display: inline-block;
+    font-size:18px;
+    display: block;
+   padding: 10px;
+   margin: 0;
+   outline: none;
+   width: 120px;
+   outline: none;
+   background-color:black;
+   color:white;
+   border-radius: 8px 8px 8px 8px;
+
+   
+}
+
+
+//cart
+.cart{
+    display: inline-block;
+  
+}
+.cart_display{
+    display: inline-block;
+    background-color: white;
+    color: #000000;
+    margin-left: 4%;
+    padding: 2%;
+    border-radius: 8px 8px 8px 8px;
+    width: 10%;
+}   
+.remove_button button{
+    font-size:14px;
+    display: block;
+   padding: 10px;
+   margin: 0;
+   outline: none;
+   width: 150px;
+   outline: none;
+   background-color:black;
+   color:white;
+   border-radius: 8px 8px 8px 8px;
+}
+.remove_button a{
+  text-decoration: none;
+}
+
